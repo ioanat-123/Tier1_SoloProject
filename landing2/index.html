@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Website</title>
+	<link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="16x16">
+	<link rel="stylesheet" href="css/mystyle.css" />
+	<script src="js/read.js"></script>
+	<script src="js/scriptjs.js"></script>
+
+</head>
+<body onscroll="scroll()">
+	<header>
+		<div class="container" id="home">
+			<nav>
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+			<h1>Landing page</h1>
+		</div>
+	</header>
+
+	<div id="section1">
+		<div class="container slide">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="images/city1.jpg">
+					<div class="text">City Name is ...</div>
+				</div>
+
+			<div class="mySlides fade">
+				<img src="images/city2.jpg">
+				<div class="text">Add another caption</div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="images/city3.jpg">
+				<div class="text">Add a final caption</div>
+			</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+			</div>	
+		</div>
+	</div>
+	
+	<div id="about">
+		<div class="container presentation">
+			<h2>About</h2>
+			<div class="columns">
+				<div class="col">
+					<h3>Tourism</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nulla, alias rerum et odio dolores sequi pariatur fuga error suscipit facilis fugit non ducimus numquam voluptas porro doloremque beatae modi.</p>
+					<span id="dots1">...</span>
+					<span id="more1" style="display: none;">Tourism. Vestibulum non vulputate elit. Nullam ut sagittis massa, nec posuere justo. 
+					Aenean sagittis mollis fringilla. </span>
+					<button onclick="readMore1()" id="read1" class="btn">Read more</button>
+				</div>
+				
+				<div class="col">
+					<h3>Business Travel</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nulla, alias rerum et odio dolores sequi pariatur fuga error suscipit facilis fugit non ducimus numquam voluptas porro doloremque beatae modi.</p>
+					<span id="dots2">...</span>
+					<span id="more2" style="display: none;">Business Travel. Vestibulum non vulputate elit. Nullam ut sagittis massa, nec posuere justo. 
+					Aenean sagittis mollis fringilla. </span>
+					<button onclick="readMore2()" id="read2" class="btn">Read more</button>
+				</div>
+				
+				<div class="col">
+					<h3>Transportation</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nulla, alias rerum et odio dolores sequi pariatur fuga error suscipit facilis fugit non ducimus numquam voluptas porro doloremque beatae modi.</p>
+					<span id="dots3">...</span>
+					<span id="more3" style="display: none;">Transportation. Vestibulum non vulputate elit. Nullam ut sagittis massa, nec posuere justo. 
+					Aenean sagittis mollis fringilla.  </span>
+					<button onclick="readMore3()" id="read3" class="btn">Read more</button>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="contact">
+		<div class="container forms">
+			<h2>Contact</h2>
+				<form action="">
+				<p><label>Name:</label></p>
+				<input type="text" name="name" id="name" class="contentf"/>
+				<p><label>Phone number:</label></p>
+				<input type="text" name="phone" id="phone" class="contentf"/>
+				<p><label>Message:</label></p>
+				<textarea name="message" id="message" rows="5" cols="50" class="contentf" style="height:90px;"/></textarea>
+				</p>
+				<input type="submit" value="Send message" onclick="validateForm()" class="btn" style="width:27%;">
+			</form>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<footer id="footer">&#169; Copyright 2021</footer>
+	
+	<script src="js/carousel.js"></script>
+	
+</body>
+</html>
